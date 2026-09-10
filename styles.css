@@ -184,17 +184,18 @@ section {
 .logo-mark {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 3px solid var(--navy);
-  border-radius: 3px;
+  border-radius: 2px;
   background: var(--white);
-  padding: 3px 7px;
-  line-height: 0.92;
+  padding: 4px 7px;
+  line-height: 1;
 }
 
 .logo-mark span {
   font-family: var(--font-head);
   font-weight: 800;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--navy);
   text-align: center;
 }
@@ -208,6 +209,11 @@ section {
   color: var(--navy-deep);
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo-word {
   display: flex;
   flex-direction: column;
@@ -217,16 +223,16 @@ section {
 .logo-word span {
   font-family: var(--font-head);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--navy);
-  line-height: 1.18;
+  line-height: 1.16;
 }
 
 .logo-underline {
   height: 2px;
   width: 100%;
   background: var(--teal);
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 /* ---------- Header ---------- */
