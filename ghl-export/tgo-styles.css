@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -41,6 +42,28 @@ body {
   background: var(--white);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ---------- Full-bleed fix ----------
+   Page builders like GoHighLevel drop this code into a padded,
+   max-width "row" element instead of the raw <body>, which is what
+   causes the white bars down the sides. Every top-level section below
+   is stretched back out to the full browser width regardless of how
+   narrow or padded that wrapping row is; the .wrap div inside each
+   one still centers the actual content at --max, so nothing about the
+   sections themselves changes — only their background now runs edge
+   to edge. */
+.site-header,
+.hero,
+.section-light,
+.section-dark,
+.owner-section,
+.section-soft,
+.area-band,
+.site-footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 img {
